@@ -2,8 +2,13 @@
   "name": "e-commerce-store",
   "version": "1.0.0",
   "description": "Projeto de Ecommerce do Hands-On AWS",
-  "main": "index.js",
+  "main": "backend/server.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js"
+  },
   "author": "Rodrigo Soares <adsrodsoares@gmail.com>",
+  "type": "module",
   "license": "MIT",
   "dependencies": {
     "bcryptjs": "^3.0.2",
