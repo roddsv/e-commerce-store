@@ -1,6 +1,17 @@
 import 'dotenv/config';
 import express from 'express';
 
+import connectionDB from './lib/database/db.js';
+
+connectionDB
+    .authenticate()
+    .then(() => {
+        console.log('DB successfully connected');
+    })
+    .catch((errorMessage) => {
+        console.log(errorMessage);
+    });
+
 import authRoutes from './routes/auth.route.js';
 const app = express();
 
