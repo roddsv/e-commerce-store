@@ -15,7 +15,7 @@ const Product = connectionDB.define('products', {
     }
 });
 
-Product.sync({ force: true})
+Product.sync({})
     .then(
         () => {
             console.log(`products table successfully created!`)

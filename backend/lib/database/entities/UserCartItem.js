@@ -9,7 +9,7 @@ const UserCartItem = connectionDB.define('userCartItems', {
     }  
 });
 
-UserCartItem.sync({ force: true })
+UserCartItem.sync()
     .then(
         () => {
             console.log(`userCartItems table successfully created!`)
